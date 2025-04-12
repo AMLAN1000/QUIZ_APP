@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - QuizPoint</title>
+    <link rel="stylesheet" href="./T_style/teacher.css">
+</head>
+<body>
+    <body>
+        <header>
+            <h1>Teacher Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="welcome-section">
+                <h2>Welcome, Teacher</h2>
+                <p>Select an option below to proceed:</p>
+            </section>
+            <section class="options-section">
+                <div class="dashboard-buttons">
+                    <button onclick="window.location.href='manage-students.html'">Manage Students</button>
+                    <button onclick="window.location.href='create-quiz.html'">Create Quiz</button>
+                    <button onclick="window.location.href='view-quizzes.html'">View Running Quizzes</button>
+                    <button onclick="window.location.href='submissions.html'">Submissions</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 QuizPoint. All rights reserved.</p>
+        </footer>
+       
+    <script>
+        // Logout functionality
+        document.getElementById('logout').addEventListener('click', () => {
+            sessionStorage.clear();
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+</html>

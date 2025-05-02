@@ -19,7 +19,7 @@ app.use(express.json());
 // Configure CORS
 app.use(
     cors({
-        origin: ['http://localhost:5000', 'http://127.0.0.1:5500'], // Restrict origins
+        origin: '*',        //['http://localhost:5000', 'http://127.0.0.1:5500'], // Restrict origins
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         credentials: true, // Allow cookies
     })
